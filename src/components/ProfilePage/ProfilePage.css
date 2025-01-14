@@ -1,0 +1,63 @@
+.returnHomePageBtn
+{
+    background-color: transparent;
+    padding: 50px;
+    border: none;
+}
+.returnHomePageBtn:active {
+    border: none;
+    outline: none;
+}
+.wallpaper
+{
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+
+}
+.wallpaperImg
+{
+    width: 100vw;
+    height: 500px;
+    object-fit: cover;
+
+}
+.profile
+{
+    display: flex;
+    align-items: center;
+}
+.avatar
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    margin-left:90px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.name {
+    margin: 20px;
+}
+.bio
+{
+    margin-top: 100px;
+    margin-left: -60px;
+}
+.cardShowcase {
+    background-color: #D9D9D9;
+    width: 100vw;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+    gap: 30px;
+}
+.cardImg
+{
+    width: 300px;
+    height: 400px;
+
+}
