@@ -1,21 +1,15 @@
-import { useNavigate } from 'react-router-dom';
 import './ProfilePage.css';
-import avatar from '../../assets/avtz.jpg';
 // import card from '../../assets/sanagi.jpg';
 import wallpaper from '../../assets/image.png';
 import avt from '../../assets/avt2.jpg';
+import NavigateBar from "../NavigatorBar/NavigatorBar.tsx";
 
 function ProfilePage() {
-    const navigate = useNavigate();
     const name = "mufi";
     const bio = "Karma is a wonderful thing";
   return (
-    <div>
-       <div className="navigator">
-        <button className="returnHomePageBtn" type="button" onClick={() => navigate('/')}>
-            <img className="returnHomePage-icon" src={avatar} alt="Avatar"/>
-        </button>
-        </div>
+    <div className="ProfilePage">
+        <NavigateBar/>
         <div className="wallpaper">
             <img className="wallpaperImg" src={wallpaper} alt="" />
         </div>

@@ -1,0 +1,101 @@
+.slideshow-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 200px;
+}
+.slide-content {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    gap: 100px;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+.slide {
+    padding-left: 100px;
+    display: flex;
+    align-items: center;
+    gap: 200px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide.animating {
+    transform: translateX(-100%);
+}
+
+.slide-text {
+    width: 40%;
+    font-size: 25px;
+    justify-items: center;
+    text-align: center;
+    color: #8c0d3d;
+
+}
+
+
+.slide-image {
+    transition: transform 0.5s ease-in-out;
+    padding: 20px;
+
+}
+
+.slide-image.animating {
+    transform: translateX(-100%);
+}
+.slide-image img {
+    border-radius: 8px;
+    width: 800px;
+    height: 450px;
+    object-fit: cover;
+}
+
+.btn-part
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 20px;
+}
+
+
+
+.navigation-buttons {
+    display: flex;
+    gap: 10px;
+    width: auto;
+    justify-items: left;
+    padding-left: 20px;
+}
+
+.navigation-button {
+    width: 10px;
+    height: 10px;
+    background-color: #faabc0;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.navigation-button.active {
+    background: #c86380;
+}
+
+.prev-button, .next-button {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #f31757;
+    border: none;
+    outline: none;
+}
+
+.prev-button:focus,
+.next-button:focus,
+.prev-button:active,
+.next-button:active
+.next-button:hover,
+.prev-button:hover {
+    outline: none;
+    border: none;
+}

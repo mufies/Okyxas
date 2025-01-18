@@ -1,19 +1,21 @@
-import avatar from "../../assets/avtz.jpg";
 import "./HomePage.css";
-import {useNavigate} from "react-router-dom";
+import NavigateBar from "../NavigatorBar/NavigatorBar.tsx";
+import SlideShow from "../SlideShow/SlideShow.tsx";
+import { useNavigate } from "react-router-dom";
 
 function HomePage() {
     const navigate = useNavigate();
-
     return (
-    <div>
-        <img className="icon" src={avatar} alt="Avatar"/>
-        <h1 className="WelcomeHomePage">Welcome To WeebHarmony</h1>
-        <p className="des">Collect stunning anime gacha cards, trade with others,
-            and sell on a bustling marketplace. Build your dream collection today!</p>
-        <button className="tryit" type="button" onClick={() => navigate('/login')}>Try it now!</button>
-    </div>
-  );
+        <div className="homepage">
+            <NavigateBar/>
+            <SlideShow/>
+
+            <div className="tryit-btn">
+                <button className="tryit" type="button" onClick={() => navigate('/login')}>Try it now!</button>
+            </div>
+        </div>
+
+    );
 }
 
 export default HomePage;

@@ -1,3 +1,9 @@
+.ProfilePage
+{
+
+    background-color: #fff0fe;
+}
+
 .returnHomePageBtn
 {
     background-color: transparent;
@@ -10,7 +16,9 @@
 }
 .wallpaper
 {
+    padding-top: 80px;
     justify-items: center;
+    justify-content: center;
     align-items: center;
     align-content: center;
     display: flex;
@@ -18,22 +26,24 @@
 }
 .wallpaperImg
 {
-    width: 100vw;
+    width: 80vw;
     height: 500px;
     object-fit: cover;
+    border-radius: 30px;
 
 }
 .profile
 {
     display: flex;
     align-items: center;
+    padding-left: 90px ;
 }
 .avatar
 {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 30px;
-    margin-left:90px;
+    margin-left:100px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -52,7 +62,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 100px 0;
     gap: 30px;
 }
 .cardImg
