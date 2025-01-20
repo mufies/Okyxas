@@ -140,3 +140,12 @@ html, body {
     background-color: #000000;
     color: white;
 }
+.error-message
+{
+    font-size: 16px;
+    display: flex;
+    position: absolute;
+    left: 380px;
+    top: 600px;
+    color: black;
+}

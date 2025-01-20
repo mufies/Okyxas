@@ -2,7 +2,7 @@ import './ProfilePage.css';
 // import card from '../../assets/sanagi.jpg';
 import wallpaper from '../../assets/image.png';
 import avt from '../../assets/avt2.jpg';
-import NavigateBar from "../NavigatorBar/NavigatorBar.tsx";
+import NavigateBar from "../../components/NavigatorBar/NavigatorBar.tsx";
 
 function ProfilePage() {
     const name = "mufi";
