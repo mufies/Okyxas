@@ -19,14 +19,7 @@ function ProfilePage() {
             <h2 className="bio">{bio}</h2>
         </div>
         <div className="cardShowcase">
-                <img src={avt} alt="" className="cardImg"/>
-
-
-                <img src={avt} alt="" className="cardImg"/>
-
-                <img src={avt} alt="" className="cardImg"/>
-
-                <img src={avt} alt="" className="cardImg"/>
+               
         </div>
     </div>
   );

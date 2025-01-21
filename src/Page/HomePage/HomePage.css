@@ -1,82 +1,56 @@
 .homepage
 {
     width: 100vw;
-    background-color: #ffe2fd;
+    background-color: white;
+    background-size: cover;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     min-height: 100vh;
     position: relative;
 }
 
-.WelcomeHomePage
-{
-    font-weight: bold;
-    display: flex;
-    color: #000000;
-
-}
-
-.Intropart
+.homepage-content
 {
     display: flex;
-    padding-top: 180px;
-    justify-content: space-between;
-    justify-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-}
-.PreviewVideo
-{
-    width: 556px;
-    height: 320px;
-    object-fit: cover;
-    border-radius: 30px;
-}
-.LeftPart
-{
-    padding-left: 170px;
-    padding-top: 140px;
-}
-.VideoPart
-{
-    padding-top: 150px;
-    padding-right: 170px;
-}
-
-
-.des
-{
-    font-size: 25px;
-    display: flex;
-    color: #000000;
-    left: 240px;
-    top: 347px;
-    max-width: 500px;
-    justify-content: center;
+    width: 500px;
+    margin-top: 100px;
+    font-family:  sans-serif;
+    flex-direction: column;
     text-align: center;
+    justify-content: center;
+    padding: 50px;
+    margin-left: 100px;
+    border-radius: 30px;
+    background-color: rgba(21, 134, 174, 0.48);
+    gap: 20px;
+    color: black;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+
 }
 .tryit-btn {
     margin-top: 20px;
     padding: 10px 20px;
-    margin-left: 330px;
+    margin-left: 355px;
 }
 
 .tryit {
-    padding: 10px 20px;
-    font-size: 30px;
+    padding:10px 30px;
+    font-size: 20px;
     font-family: sans-serif;
     font-weight: bold;
     font-style: italic;
-    background-color: #dc78a4;
-    color: white;
-    border: 1px solid #4a0122;
-    border-radius: 5px;
+    background-color: #ffffff;
+    border:1px solid black;
+    color: black;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    border-radius: 30px;
 }
 
 .tryit:hover {
-    color: #c86380;
-    background-color: transparent;
-    border-color: #e35e92;
+    color: white;
+    background-color: black;
+    border: none;
+    outline: none;
 }

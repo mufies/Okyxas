@@ -1,0 +1,44 @@
+/* DropdownButton.css */
+.dropdown-button {
+    position: relative;
+    display: inline-block;
+}
+
+.main-button {
+    background-color: transparent;
+    color: black;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dropdown-content {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.dropdown-item {
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+}

@@ -4,16 +4,7 @@
     background-color: #fff0fe;
 }
 
-.returnHomePageBtn
-{
-    background-color: transparent;
-    padding: 50px;
-    border: none;
-}
-.returnHomePageBtn:active {
-    border: none;
-    outline: none;
-}
+
 .wallpaper
 {
     padding-top: 80px;

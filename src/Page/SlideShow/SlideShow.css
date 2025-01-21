@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     gap: 20px;
-    padding-top: 200px;
 }
 .slide-content {
     display: flex;
@@ -29,11 +28,14 @@
     font-size: 25px;
     justify-items: center;
     text-align: center;
-    color: #8c0d3d;
+    color: black;
 
 }
 
-
+.slide-Right
+{
+    margin-top: 30px;
+}
 .slide-image {
     transition: transform 0.5s ease-in-out;
     padding: 20px;
@@ -72,14 +74,14 @@
 .navigation-button {
     width: 10px;
     height: 10px;
-    background-color: #faabc0;
+    background-color: rgba(21, 134, 174, 0.48);
     border: none;
     cursor: pointer;
     display: inline-block;
 }
 
 .navigation-button.active {
-    background: #c86380;
+    background: #21b5d1;
 }
 
 .prev-button, .next-button {

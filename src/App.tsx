@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import LoginPage from './Page/LoginPage/LoginPage';
 import RegisterPage from './Page/RegisterPage/RegisterPage';
 import HomePage from './Page/HomePage/HomePage';
-import ProfilePage from './Page/ProfilePage/ProfilePage';
+import ProfilePage from './Page/MyProfilePage/ProfilePage';
 import DashboardPage from './Page/Dashboard/Dashboard.tsx';
 import './App.css';
 import ProtectRoute from './components/Authen/ProtectRoute';
