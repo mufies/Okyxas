@@ -1,20 +1,20 @@
 [
   {
     "id": 1,
-    "title": "Welcome To WeebHarmony",
-    "description": "Collect stunning anime gacha cards, trade with others,\n  and sell on a bustling marketplace. Build your dream collection today!",
+    "title": "Okyxas: Ultimate Anime Gacha",
+    "description": "Unleash the excitement of anime gacha packs! Collect beautifully designed cards featuring your favorite characters and discover rare treasures as you build your collection.",
     "image": "/src/assets/avt2.jpg"
   },
   {
     "id": 2,
-    "title": "Unleash the Gacha Excitement!",
-    "description": "Draw beautifully crafted anime cards, trade duplicates, and score exclusive collectibles. The thrill of the trade starts here—only on WeebHarmony!",
+    "title": "Unpack & Discover",
+    "description": "Open gacha packs with stunning animations and uncover unique, rare cards. Every pack is a chance to add something extraordinary.",
     "image": "/src/assets/bg.png"
   },
   {
     "id": 3,
-    "title": "Trade, Collect, Dominate!",
-    "description": "Spin for rare anime gacha cards, trade with fans worldwide, and build your dream collection. Don’t just collect—connect and trade with WeebHarmony!",
+    "title": "Trade & Build Your Deck",
+    "description": "Trade cards with players worldwide, complete sets, and create your ultimate anime collection. Okyxas makes trading simple, fun, and rewarding!",
     "image": "/src/assets/image.png"
   }
 ]

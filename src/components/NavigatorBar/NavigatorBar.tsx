@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import avatar from "../../assets/logo.jpg";
 import { useNavigate } from "react-router-dom";
 import './NavigatorBar.css';
@@ -10,23 +10,23 @@ import ContactBtn from "./ContactBtn.tsx";
 function NavigateBar() {
     const navigate = useNavigate();
     const { isAuthenticated } = useAuth();
-    useEffect(() => {
-        const handleScroll = () => {
-            const navigator = document.querySelector('.navigator');
-            if (navigator) {
-                if (window.scrollY > 50) {
-                    navigator.classList.add('minimized');
-                } else {
-                    navigator.classList.remove('minimized');
-                }
-            }
-        };
-
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, []);
+    // useEffect(() => {
+    //     const handleScroll = () => {
+    //         const navigator = document.querySelector('.navigator');
+    //         if (navigator) {
+    //             if (window.scrollY > 50) {
+    //                 navigator.classList.add('minimized');
+    //             } else {
+    //                 navigator.classList.remove('minimized');
+    //             }
+    //         }
+    //     };
+    //
+    //     window.addEventListener('scroll', handleScroll);
+    //     return () => {
+    //         window.removeEventListener('scroll', handleScroll);
+    //     };
+    // }, []);
 
 
     return (

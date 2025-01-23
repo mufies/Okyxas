@@ -3,21 +3,21 @@
     align-items: center;
 
     justify-content: space-between;
-    background-color: white;
+    background-color: black;
     transition: height 0.3s ease, background-color 0.3s ease;
     position: fixed;
     top: 0;
-    color: black;
+    color: white;
     width: 100%;
     z-index: 100;
-    height: 90px;
+    height: 75px;
 }
 .Navigator-LeftPart {
     display: flex;
     align-items: center;
     justify-items: center;
     gap: 20px;
-    padding-left: 50px;
+    padding-left: 100px;
 }
 .Navigator-RightPart
 {
@@ -38,27 +38,51 @@
     padding: 5px 40px;
 }
 
-.Navigator-RightPart-ProjectDes-AboutUs
-{
-    background-color: transparent;
+.Navigator-RightPart-ProjectDes-AboutUs {
+    background-color: white;
     color: black;
-    border: none;
+    border: 1px solid white;
     outline: none;
+    font-size: 1em;
+    padding: 5px 20px;
+    border-radius: 30px;
+    transition: transform 0.3s ease;
+    transform-origin: center;
 }
-.Navigator-RightPart-ProjectDes-AboutUs:hover
-{
-    background-color: transparent;
+
+.Navigator-RightPart-ProjectDes-AboutUs:hover {
+    transform: scale(1.1);
+}
+
+.Navigator-RightPart-ProjectDes-Github {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
     outline: none;
+    font-size: 1em;
+    padding: 0 20px;
+    border-radius: 30px;
+    transition: transform 0.3s ease;
+    transform-origin: center;
+}
+
+.Navigator-RightPart-ProjectDes-Github:hover {
+    transform: scale(1.1);
+}
+
+.ProfileBtn {
+    background-color: transparent;
     border: none;
-    color: black;
+    font-size: 25px;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    transform-origin: center;
 }
-.Navigator-RightPart-ProjectDes-Github
-{
-    color: black;
-}
-.Navigator-RightPart-ProjectDes-Github:hover
-{
-    color: black;
+
+.ProfileBtn:hover {
+    transform: scale(1.1);
 }
 
 .navigator.minimized {
@@ -77,8 +101,8 @@
 
 .returnHomePageBtn-icon {
     background-color: transparent;
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
     transition: width 0.3s ease, height 0.3s ease;
 }
@@ -96,7 +120,7 @@
     background-color: transparent;
     border: none;
     font-size: 25px;
-    color: black;
+    color: white;
     outline: none;
     cursor: pointer;
 }
