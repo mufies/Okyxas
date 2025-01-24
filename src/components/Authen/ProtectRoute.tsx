@@ -11,7 +11,7 @@ const ProtectRoute: React.FC<ProtectRouteProps> = ({ children }) => {
     const { isAuthenticated } = useAuth();
 
     if (!isAuthenticated) {
-        return <Navigate to="/login" />;
+        return <Navigate to="/login"/>;
     }
 
     return children;

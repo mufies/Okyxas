@@ -3,10 +3,11 @@ import LoginPage from './Page/LoginPage/LoginPage';
 import RegisterPage from './Page/RegisterPage/RegisterPage';
 import HomePage from './Page/HomePage/HomePage';
 import ProfilePage from './Page/MyProfilePage/ProfilePage';
-import DashboardPage from './Page/Dashboard/Dashboard.tsx';
 import './App.css';
 import ProtectRoute from './components/Authen/ProtectRoute';
 import {AuthProvider} from "./components/Authen/AuthContext.tsx";
+import UnPackPage from "./Page/UnPackPage/UnPackPage.tsx";
+import TradePage from "./Page/TradePage/TradePage.tsx";
 
 function App() {
     return (
@@ -15,10 +16,11 @@ function App() {
 
             <Routes>
                 <Route index element={<HomePage/>}/>
-                <Route path="/dashboard" element={<ProtectRoute><DashboardPage/></ProtectRoute>}/>
+                <Route path="/home" element={<ProtectRoute><ProfilePage/></ProtectRoute>}/>
+                <Route path={"unpack"} element={<UnPackPage/>}/>
+                <Route path={"trade"} element={<TradePage/>}/>
                 <Route path="/login" element={<LoginPage />} />
                 <Route path="/register" element={<RegisterPage />} />
-                <Route path="/profile" element={<ProfilePage/>}/>
             </Routes>
             </AuthProvider>
 

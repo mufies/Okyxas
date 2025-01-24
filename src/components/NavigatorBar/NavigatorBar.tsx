@@ -35,6 +35,14 @@ function NavigateBar() {
             <button className="returnHomePageBtn" type="button" onClick={() => navigate('/')}>
                 <img className="returnHomePageBtn-icon" src={avatar} alt="Avatar"/>
             </button>
+                <button className={"Navigator-LeftPart-UnPack"} onClick={()=>navigate("/unpack")}>
+                    UnPack
+                </button>
+                <button className={"Navigator-LeftPart-Trade"} onClick={()=>navigate("/trade")}>
+                    Trade
+                </button>
+
+
             </div>
 
             <div className={"Navigator-RightPart"}>

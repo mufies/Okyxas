@@ -51,7 +51,7 @@ function HomePage() {
             <NavigateBar/>
 
             <div className={"homepage-content-firstpart"}>
-                <img className={"homepage-content-firstpart-img"} src={"/src/assets/Frame 1.jpg"} alt="firstpic"/>
+                <img className={"homepage-content-firstpart-img"} src={"/src/assets/homepagebg.jpg"} alt="firstpic"/>
             </div>
 
             <div className={"homepage-content-introduction"}>
