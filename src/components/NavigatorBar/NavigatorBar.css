@@ -37,6 +37,8 @@
 }
 .Navigator-LeftPart-UnPack:hover{
     transform: scale(1.1);
+    border: none;
+
 }
 .Navigator-LeftPart-Trade {
     background-color: white;
@@ -51,6 +53,7 @@
 }
 .Navigator-LeftPart-Trade:hover {
     transform: scale(1.1);
+    border: none;
 }
 .Navigator-RightPart
 {
@@ -85,6 +88,8 @@
 
 .Navigator-RightPart-ProjectDes-AboutUs:hover {
     transform: scale(1.1);
+    border: none;
+
 }
 
 .Navigator-RightPart-ProjectDes-Github {

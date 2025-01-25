@@ -19,7 +19,6 @@ function ProfilePage() {
             <h2 className="bio">{bio}</h2>
         </div>
         <div className="cardShowcase">
-               
         </div>
     </div>
   );

@@ -1,5 +1,6 @@
 import './TradePage.css';
 import NavigateBar from "../../components/NavigatorBar/NavigatorBar.tsx";
+import GetUserCardData from "../../components/GetUserCardData/GetUserCardData.tsx";
 function TradePage() {
   return (
     <div>
@@ -9,6 +10,8 @@ function TradePage() {
 
             <div className={"Trade-container-userpage"}>
                 <div className={"Trade-container-userpage-packshowcase"}>
+                    <GetUserCardData/>
+
                 </div>
             </div>
                 <button className={"Trade-container-btn"}>Trade!</button>
