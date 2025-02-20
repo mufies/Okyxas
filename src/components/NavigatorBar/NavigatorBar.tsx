@@ -5,7 +5,7 @@ import './NavigatorBar.css';
 import {faUser} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {useAuth}   from "../Authen/AuthContext.tsx";
-import ContactBtn from "./ContactBtn.tsx";
+// import ContactBtn from "./ContactBtn.tsx";
 
 function NavigateBar() {
     const navigate = useNavigate();
@@ -35,26 +35,27 @@ function NavigateBar() {
             <button className="returnHomePageBtn" type="button" onClick={() => navigate('/')}>
                 <img className="returnHomePageBtn-icon" src={avatar} alt="Avatar"/>
             </button>
-                <button className={"Navigator-LeftPart-UnPack"} onClick={()=>navigate("/unpack")}>
+            </div>
+
+            <div className={"Navigator-MiddlePart"}>
+                <button className={"Navigator-MiddlePart-Unpack"} onClick={()=>navigate("/unpack")}>
                     UnPack
                 </button>
-                <button className={"Navigator-LeftPart-Trade"} onClick={()=>navigate("/trade")}>
+                <button className={"Navigator-MiddlePart-Trade"} onClick={()=>navigate("/trade")}>
                     Trade
                 </button>
-
+                <button className={"Navigator-MiddlePart-AboutUs"} onClick={()=>navigate("/aboutus")}>
+                    About Us
+                </button>
+                <a className="Navigator-MiddlePart-Github" href="https://github.com/mufies/Okyxas" target="_blank" rel="noopener noreferrer">
+                    GitHub Repo
+                </a>
+                {/*<ContactBtn/>*/}
 
             </div>
 
             <div className={"Navigator-RightPart"}>
-                <div className={"Navigator-RightPart-ProjectDes"}>
-                    <button className={"Navigator-RightPart-ProjectDes-AboutUs"} onClick={()=>navigate("/aboutus")}>
-                        About Us
-                    </button>
-                    <a className="Navigator-RightPart-ProjectDes-Github" href="https://github.com/walshiiro/WeebHarmony" target="_blank" rel="noopener noreferrer">
-                        GitHub Repo
-                    </a>
-                    <ContactBtn/>
-                </div>
+
                 { (isAuthenticated()) ? (
                         <button className={"ProfileBtn"} key={"Profile"} onClick={() => navigate('/profile')}>
                             <FontAwesomeIcon icon={faUser}/>
