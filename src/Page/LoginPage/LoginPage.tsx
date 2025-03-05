@@ -3,8 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { useAuth } from '../../components/Authen/AuthContext';
 import './LoginPage.css';
-import avatar from '../../assets/avtz.jpg';
-import banner from '../../assets/sanagi.jpg';
+import avatar from '../../assets/logo.jpg';
+import banner from '../../assets/Nagisa_Kirifuji.png';
 
 function LoginPage() {
     const navigate = useNavigate();
@@ -42,14 +42,12 @@ function LoginPage() {
     };
 
     return (
-        <div>
+        <div className="login-page">
             <button className="returnHomePage" type="button" onClick={() => navigate('/')}>
-                <img className="returnHomePage-icon" src={avatar} alt="Avatar" />
+                <img className="icon" src={avatar} alt="Avatar" />
             </button>
 
-            <p className="WebName">WeebHarmony</p>
-            <h1 className="WelcomeHeading">WELCOME BACK</h1>
-
+            <h1 className="login-title">LOG IN</h1>
             <form className="login-form" onSubmit={handleSubmit}>
                 <label htmlFor="username" className="username-label">Enter username or email</label>
                 <input
