@@ -1,0 +1,27 @@
+/*.scroll-container-banner{*/
+/*    overflow-x: auto;*/
+
+/*    white-space: nowrap;*/
+/*    scrollbar-color: white rgba(255, 255, 255, 0.57);*/
+/*    scrollbar-width: thin;*/
+/*}*/
+
+/*.banner-card {*/
+/*    display: inline-block;*/
+/*    text-align: center;*/
+/*    background: none;*/
+/*    border: none;*/
+/*    color: white;*/
+/*}*/
+
+/*.banner-card:hover {*/
+/*    cursor: pointer;*/
+/*    transform: scale(1.1);*/
+/*}*/
+
+/*.banner-img {*/
+/*    width: 150px;*/
+/*    height: 70px;*/
+/*    object-fit: cover;*/
+/*    border-radius: 5px;*/
+/*}*/
