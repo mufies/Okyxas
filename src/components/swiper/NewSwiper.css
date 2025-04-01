@@ -1,0 +1,25 @@
+.swiper {
+    width: 1200px;
+    background: transparent;
+    height: 600px;
+    box-shadow: none;
+    object-fit: cover;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    overflow: hidden;
+}
+
+.swiper-button-next {
+    color: #000;
+}
+.swiper-button-prev {
+    color: #000;
+}
+.swiper-pagination {
+    display: none !important;
+}

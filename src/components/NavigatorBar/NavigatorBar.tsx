@@ -44,9 +44,7 @@ function NavigateBar() {
                 <button className={"Navigator-MiddlePart-Trade"} onClick={()=>navigate("/trade")}>
                     Trade
                 </button>
-                <button className={"Navigator-MiddlePart-AboutUs"} onClick={()=>navigate("/aboutus")}>
-                    About Us
-                </button>
+
                 <a className="Navigator-MiddlePart-Github" href="https://github.com/mufies/Okyxas" target="_blank" rel="noopener noreferrer">
                     GitHub Repo
                 </a>
@@ -57,7 +55,7 @@ function NavigateBar() {
             <div className={"Navigator-RightPart"}>
 
                 { (isAuthenticated()) ? (
-                        <button className={"ProfileBtn"} key={"Profile"} onClick={() => navigate('/profile')}>
+                        <button className={"ProfileBtn"} key={"Profile"} onClick={() => navigate('/deck')}>
                             <FontAwesomeIcon icon={faUser}/>
                         </button>
                 ):

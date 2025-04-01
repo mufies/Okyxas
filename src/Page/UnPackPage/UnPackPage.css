@@ -80,10 +80,11 @@
 
 .banner-card:hover {
     cursor: pointer;
-    transform: scale(1.1);
 }
 .banner-card:focus {
-outline: none;
+    outline: none;
+    background: url('/src/assets/selected-banner-frame.png') no-repeat center center;
+    background-size: cover;
 }
 
 .banner-img {

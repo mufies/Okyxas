@@ -1,6 +1,6 @@
 .Trade-container
 {
-    background: #c8bebe;
+    background: #f8fcff;
 
     width: 100vw;
     height: 100vh;
@@ -14,23 +14,26 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background: #b7f1f1;
+    background: rgba(55, 53, 53, 0.16);
     margin-left: 80px;
     margin-top: 110px;
     width: 1750px;
     height: 770px;
-    border-radius: 30px;
+    border-radius: 10px;
 
 }
 .Trade-container-userpage
 {
     display: flex;
 
-    background: #e35e92;
+    background: #f8fcff;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 
     width: 600px;
     height: 600px;
-    border-radius: 30px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
 }
 
 .Trade-container-anotheruser
@@ -38,16 +41,17 @@
     display: flex;
     gap: 20px;
     flex-direction: column;
-    background: #e35e92;
+    background: #f8fcff;
 
     width: 600px;
     height: 600px;
-    border-radius: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 .Trade-container-btn
 {
     display: flex;
-    font-size: 30px;
+    font-size: 20px;
 
     padding: 10px 10px;
     width: 150px;

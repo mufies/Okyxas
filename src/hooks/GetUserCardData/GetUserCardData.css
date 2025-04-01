@@ -5,6 +5,7 @@
     justify-items: center;
     justify-content: center;
 
+
 }
 
 .scroll-container::-webkit-scrollbar {
@@ -12,17 +13,30 @@
     height: 0;
 }
 
-.user-card
-{
+.user-card {
     justify-content: center;
     align-items: center;
     justify-items: center;
     display: flex;
     margin-top: 50px;
-    margin-bottom: 10px;
+    margin-bottom: 70px;
     cursor: pointer;
-    margin-right: 5px;
 }
+
+.user-card.selected {
+    border: 2px solid;
+    animation: rgbBorder 1.5s infinite linear;
+    outline: none;
+}
+
+@keyframes rgbBorder {
+    0% { border-color: red; }
+    25% { border-color: yellow; }
+    50% { border-color: lime; }
+    75% { border-color: cyan; }
+    100% { border-color: red; }
+}
+
 .card-img
 {
     width: 100px;

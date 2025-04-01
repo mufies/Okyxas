@@ -1,14 +1,6 @@
-.ProfilePage
-{
-
-    background-color: rgba(243, 243, 243, 0.86);
-
-}
-
 
 .wallpaper
 {
-    padding-top: 80px;
     justify-items: center;
     justify-content: center;
     align-items: center;
@@ -16,12 +8,12 @@
     display: flex;
 
 }
-.wallpaperImg
+.wallpaper-img
 {
-    width: 80vw;
+
+    width: 1920px;
     height: 500px;
     object-fit: cover;
-    border-radius: 30px;
 
 }
 .profile

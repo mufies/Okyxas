@@ -9,46 +9,7 @@ const banner = [
         title: 'Nagisa',
         image: '/src/assets/bannershowcase/nagisa.jpg',
     },
-    {
-        id: 2,
-        title: 'Nagisa',
-        image: '/src/assets/bannershowcase/nagisa.jpg',
-    },
-    {
-        id: 2,
-        title: 'Nagisa',
-        image: '/src/assets/bannershowcase/nagisa.jpg',
-    },
-    {
-        id: 2,
-        title: 'Nagisa',
-        image: '/src/assets/bannershowcase/nagisa.jpg',
-    },
-    {
-        id: 2,
-        title: 'Nagisa',
-        image: '/src/assets/bannershowcase/nagisa.jpg',
-    },
-    {
-        id: 2,
-        title: 'Nagisa',
-        image: '/src/assets/bannershowcase/nagisa.jpg',
-    },
-    {
-        id: 2,
-        title: 'Nagisa',
-        image: '/src/assets/bannershowcase/nagisa.jpg',
-    },
-    {
-        id: 2,
-        title: 'Nagisa',
-        image: '/src/assets/bannershowcase/nagisa.jpg',
-    },
-    {
-        id: 2,
-        title: 'Nagisa',
-        image: '/src/assets/bannershowcase/nagisa.jpg',
-    },
+
 
 
     ];

@@ -1,108 +1,92 @@
 import "./HomePage.css";
+import React, {useEffect} from 'react';
+import {Fade} from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css'
 import NavigateBar from "../../components/NavigatorBar/NavigatorBar.tsx";
 // import { useEffect } from "react";
-import leftpic from "../../assets/hoshino-left.jpg";
-import rightpic from "../../assets/hanako_s.jpg";
+
 import {useAuth} from "../../components/Authen/AuthContext.tsx";
 import { useNavigate } from "react-router-dom";
+
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import NewsSwiper from "../../components/swiper/NewsSwiper.tsx";
+
 
 function HomePage() {
     const navigate = useNavigate();
     const { isAuthenticated } = useAuth();
-    // useEffect(() => {
-    //     const handleScroll = () => {
-    //         const elements = document.querySelectorAll('.slide-in-left');
-    //         elements.forEach(element => {
-    //             const rect = element.getBoundingClientRect();
-    //             if (rect.top < window.innerHeight && rect.bottom >= 0) {
-    //                 element.classList.add('active');
-    //             } else {
-    //                 element.classList.remove('active');
-    //             }
-    //         });
-    //     };
-    //
-    //     window.addEventListener('scroll', handleScroll);
-    //     handleScroll(); // Trigger the scroll handler to check the initial position
-    //     return () => {
-    //         window.removeEventListener('scroll', handleScroll);
-    //     };
-    // }, []);
-    // useEffect(() => {
-    //     const handleScroll = () => {
-    //         const elements = document.querySelectorAll('.slide-in-right');
-    //         elements.forEach(element => {
-    //             const rect = element.getBoundingClientRect();
-    //             if (rect.top < window.innerHeight && rect.bottom >= 0) {
-    //                 element.classList.add('active');
-    //             } else {
-    //                 element.classList.remove('active');
-    //             }
-    //         });
-    //     };
-    //
-    //     window.addEventListener('scroll', handleScroll);
-    //     handleScroll(); // Trigger the scroll handler to check the initial position
-    //     return () => {
-    //         window.removeEventListener('scroll', handleScroll);
-    //     };
-    // }, []);
+
+
+
+
+
+
+    const slideImages = [
+        {
+            url: 'src/assets/2217506.jpg',
+        },
+        {
+            url: 'src/assets/firstpic.jpg',
+        },
+        {
+            url: 'src/assets/homepagebg.jpg',
+        },
+    ];
+
+
+
     return (
         <div className="homepage">
 
             <NavigateBar/>
-
+            <div className="tryit-btn">
+                { (isAuthenticated()) ? (
+                        console.log("isAuthenticated"),
+                            <button className="tryit" type="button" onClick={() => navigate('/dashboard')}>Try it now!</button>
+                    ):
+                    (
+                        console.log("isNotAuthenticated"),
+                            <button className="tryit" type="button" onClick={() => navigate('/login')}>Try it now!</button>)
+                }
+            </div>
             <div className={"homepage-content"}>
-            <p className={"homepage-content-title"}>Okyxas</p>
-            <p className={"homepage-content-description"}>
-                Anime card unpack website
-            </p>
-                <img className="homepage-content-left-img" src={leftpic}/>
-                <img className="homepage-content-right-img" src={rightpic}/>
-                <div className="tryit-btn">
-                    { (isAuthenticated()) ? (
-                            console.log("isAuthenticated"),
-                                <button className="tryit" type="button" onClick={() => navigate('/dashboard')}>Try it now!</button>
-                        ):
-                        (
-                            console.log("isNotAuthenticated"),
-                                <button className="tryit" type="button" onClick={() => navigate('/login')}>Try it now!</button>)
-                    }
+            <p className={"homepage-content-title"}>O   K   Y   X   A   S</p>
+                <div className="homepage-content-slide-container">
+                    <Fade arrows={false} canSwipe={false} duration={4000} pauseOnHover={false}>
+                        {slideImages.map((slideImage, index) => (
+                            <div key={index}>
+                                <div className={"homepage-content-slide-container-img"}>
+                                    <img
+                                        style={{ width: '100%', maxWidth: '1500px', height: '500px', objectFit: 'cover', borderRadius: '10px', border: '1px solid #000000' }}
+                                        src={slideImage.url}
+                                        alt="slide"
+                                    />
+                                </div>
+                            </div>
+                        ))}
+
+                    </Fade>
+
                 </div>
-            <div className={"homepage-content-overview"}>
-                <p className={"homepage-content-overview-content"}>
-                    Okyxas is a website where you can unpack anime cards and satisfy your gambling addicted xD. You can also trade the cards with other players to complete your collection.
 
-                </p>
+
+
+
 
             </div>
+            <div className={"homepage-news"}>
+                <p className={"homepage-news-title"}>N E W S</p>
+
+                <NewsSwiper/>
+
+            </div>
+            <div className={"homepage-description"}>
+
             </div>
 
-            {/*<div className={"homepage-content-introduction"}>*/}
-            {/*    <div className={"homepage-content-introduction-part1 slide-in-left"}>*/}
-            {/*        <h1 className={"homepage-content-introduction-part1-title"}>Okyxas</h1>*/}
-            {/*        <img className={"homepage-content-introduction-part1-img"} src={"/src/assets/logo.jpg"} alt="firstpic"/>*/}
-            {/*        <p className={"homepage-content-introduction-part1-description"}>*/}
-            {/*            Unleash the excitement of anime gacha packs! Collect beautifully designed cards featuring your favorite characters and discover rare treasures as you build your collection.*/}
-            {/*        </p>*/}
-            {/*    </div>*/}
-            {/*    <div className="homepage-content-introduction-part2 slide-in-right">*/}
-            {/*        <p className="homepage-content-introduction-part2-description">*/}
-            {/*            Open gacha packs with stunning animations and uncover unique, rare cards. Every pack is a chance to add something extraordinary.*/}
-            {/*        </p>*/}
-            {/*        <img className="homepage-content-introduction-part2-img" src="/src/assets/logo.jpg" alt="firstpic"/>*/}
-            {/*        <h1 className="homepage-content-introduction-part2-title">Unpack & Discover</h1>*/}
-
-
-            {/*    </div>*/}
-            {/*    <div className="homepage-content-introduction-part3 slide-in-left">*/}
-            {/*        <h1 className="homepage-content-introduction-part3-title">Trade & Build Your Deck</h1>*/}
-            {/*        <img className="homepage-content-introduction-part3-img" src="/src/assets/logo.jpg" alt="firstpic"/>*/}
-            {/*        <p className="homepage-content-introduction-part3-description">*/}
-            {/*            Trade cards with players worldwide, complete sets, and create your ultimate anime collection. Okyxas makes trading simple, fun, and rewarding!*/}
-            {/*        </p>*/}
-            {/*    </div>*/}
-            {/*</div>*/}
 
 
 
