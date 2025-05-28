@@ -1,5 +1,5 @@
 import "./HomePage.css";
-import React, {useEffect} from 'react';
+import React from 'react';
 import {Fade} from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
 import NavigateBar from "../../components/NavigatorBar/NavigatorBar.tsx";
